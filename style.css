@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #FFF3DB;
+    --cor1: #D5AC8D;
+    --cor2: #D98F89;
+    --cor3: #991916;
+    --cor4: #0B3D46;
+    --fontregular: 'Jost-Regular.ttf', sans-serif;
+    --fontprincipal: 'Jost-Italic-VariableFont_wght.ttf', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+
+}
+
+nav {
+    background-color: var(--cor2);
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > img {;
+}
+
+header {
+    padding: 40px;
+    background-color: var(--cor3);
+}
+
+main {
+    background-color: var(--cor0);
+    margin: 0 40px 0 40px;
+}
+
+article {
+
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white
+
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+
