@@ -16,3 +16,12 @@ main {
     position: relative;
     background-color: green;
 }
+
+section#telefone {
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    position: absolute;
+}
+
+
