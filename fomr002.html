@@ -8,22 +8,45 @@
 <body>
     <h1>Teste de formulário</h1>
     <form action="cadastro.php" method="get">
-        <p>
-            <label for="iusu">Usuário: </label>
-            <input type="text" name="usu" id="iusu" required maxlength="30" placeholder="Nome completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média: </label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
-        </p>
-        <p>
-            <label for="periodo">Período letivo</label>
-            <input type="date" name="periodo" id="periodo" value="2025-06">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iusu">Usuário: </label>
+                <input type="text" name="usu" id="iusu" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <P>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required>
+            </P>
+            <p>
+                <label for="imedia">Média: </label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
+            </p>
+            <p>
+                <label for="periodo">Período letivo</label>
+                <input type="date" name="periodo" id="periodo" value="2025-06">
+            </p>
+        </fieldset>
+    </form>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label>
+            <input type="checkbox" name="basquete" id="ibasquete"><label for="ibasquete"> basquete</label>
+            <input type="checkbox" name="natacao" id="inatacao"> <label for="inatacao">Natação</label>
+        </fieldset>
+
+    </form>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+            <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
