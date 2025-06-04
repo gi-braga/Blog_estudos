@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background: black url(../imagens/back-phone.jpeg) no repeat;
+    background: rgb(0, 0, 0) url(./imagens/back-phone.jpeg) no repeat;
     background-size: cover;
     background-position: center center;
 }
