@@ -8,6 +8,20 @@
 <body>
     <h1>Teste de formulário</h1>
     <form action="cadastro.php" method="get">
+            <label for="in1">Numero 1: </label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"><br>
+            <label for="in2">Numero 2: </label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)><br>
+            <label for="isoma">Soma: </label>
+            <output name="isoma" id="isoma">0</output>
+
+        <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    <form action="cadastro.php" method="get">
         <fieldset>
             <legend>Dados Pessoais</legend>
             <p>
@@ -52,10 +66,16 @@
             </p>
         </fieldset>
     </form>
+    
     <form action="cadastro.php">
         <fieldset>
             <legend>Datalist</legend>
-            
+            <label for="iest">Estado</label>
+
+            <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpar">
+            </p>
         </fieldset>
     </form>
 </body>
