@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints */
+
+@media screen and (min-width: 768px) {
+    i#burger {
+        display: none;
+
+    }
+
+    nav {
+        display: block;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        border-top: none;
+    }
+
+    article {
+        width: 768px;
+    }
+
+    
+}
