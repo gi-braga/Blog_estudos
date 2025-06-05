@@ -18,9 +18,22 @@ header h1 {
     color: white;
 }
 
+i#burger {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+i#burger:hover {
+    background-color: rgb(94, 93, 93);
+}
+
 nav {
     background-color: rgb(75, 74, 74);
-    display: block;
+    display: none;
 }
 
 nav a {
