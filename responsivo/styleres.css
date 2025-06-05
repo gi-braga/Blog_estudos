@@ -9,31 +9,58 @@ header {
     background-color: gray;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 30px;
+
+}
+
+header h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: white;
 }
 
 nav {
     background-color: rgb(75, 74, 74);
-    text-align: left;
-    padding: 12px;
+    display: block;
 }
 
 nav a {
+    display: block;
     text-decoration: none;
+    text-align: center;
     color: white;
+    padding: 10px;
+    border-top: 2px solid gray;
+}
+
+nav a:hover {
+    background-color: lightgray;
 }
 
 main {
     width: 100vw;
+    height: 100vh;
     background-color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
 }
 
+main h1 {
+    padding: 20px 5px;
+    text-align: center;
+}
+
 article {
-    width: 60vw;
-    position: relative;
+    width: 80vw;
+    height: 80vh;
     background-color: white;
     margin: auto;
     padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+article p {
+    line-height: 1em;
+    text-indent: 20px;
+
 }
