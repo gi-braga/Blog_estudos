@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 /* Todas as demais midias */
 
@@ -6,10 +6,6 @@
 
     * {
         font-family: 'Courier New', Courier, monospace;
-    }
-
-    body {
-        background-image: url(../imagens/back-print.jpeg); /* desnecessário pois nao aparece */
     }
 
     main {
