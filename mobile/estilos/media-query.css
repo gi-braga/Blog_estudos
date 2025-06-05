@@ -9,13 +9,15 @@
     }
 
     main {
-        width: 90 vw;
-        border: 2px solid black;
+        width: 90vw;
+        border: 2px solid rgba(0, 0, 0, 0.677);
+        text-align: center;
 
     }
 
-    main::content {
-        content: 'Essa impressão foi feita através do site gibraga.com.br'
+    main::after {
+        content: 'Essa impressão foi feita através do site gibraga.com.br';
+        text-align: center;
     }
 
     main h1 {
