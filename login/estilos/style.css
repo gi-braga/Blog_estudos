@@ -28,7 +28,7 @@ main {
 section#login {
     background-color: white;
     width: 250px;
-    height: 600px;
+    height: 550px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -72,16 +72,39 @@ div.campo > label {
 
 }
 
-form > .campo {
+div.campo > i {
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #8acfcd;
+    color: #49a09d;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translateY(-12px);
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82; 
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
+    border-radius: 8px;
+    margin: 7px 0px;
     color: white;
 }
-
 
 
 form > input[type=submit] {
@@ -105,7 +128,7 @@ form > a.botao {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #57c0bc;
+    background-color: white;
     color: #357472;
     text-decoration: none;
     text-align: center;
