@@ -5,30 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-        div.conteiner {
-            background-color: lightcoral;
-            display: flex;
-            flex-flow: row nowrap;     
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
         }
 
-        div.item {
-            background-color: lightblue;
-            border: 1px solid black;
-            text-align: center;
-            padding: 20px;
+        body {
+            background-color: lightcoral;
         }
+
+        main {
+            background-color: lightgreen;
+            height: 100vh;
+            width: 100vw;
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        section {
+            background-color: lightblue;
+            height: 400px;
+            width: 600px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        header {
+            width: 100vw;
+            height: 20vh;         
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-end;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        nav {
+            padding: 20px;
+            font-size: 1.2em;
+
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white
+        }
+
+
+
     </style>
 </head>
 <body>
-    <div class="conteiner">
-        <div class="item">Blobo A</div>
-        <div class="item">Blobo B</div>
-        <div class="item">Blobo C</div>
-        <div class="item">Blobo D</div>
-        <div class="item">Blobo E</div>
-        <div class="item">Blobo F</div>
-        <div class="item">Blobo G</div>
-    </div>
-    
+    <header>
+        <h1>TITULO DO SITE</h1>
+        <nav>
+            <a href="#">Home </a>
+            <a href="#">Home </a>
+            <a href="#">Home </a>
+            <a href="#">Home </a>
+            <a href="#">Home </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+            <picture>
+                <source media="(min-width: )" srcset="">
+            </picture>
+        </section>
+        <section>
+            <h1>Segunda aba</h1>
+        </section>
+    </main>    
 </body>
 </html>
