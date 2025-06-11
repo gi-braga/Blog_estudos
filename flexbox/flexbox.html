@@ -36,10 +36,10 @@
 
         header {
             width: 100vw;
-            height: 20vh;         
+            height: 20vh;  
             display: flex;
-            flex-flow: row wrap;
-            align-content: flex-end;
+            flex-flow: row nowrap;
+            align-items: flex-end;       
         }
 
         header > h1 {
@@ -57,13 +57,27 @@
             color: white
         }
 
+        section.conteiner {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        div.item {
+            background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            margin-right: 10px;
+            align-self: center;
+        }
+
 
 
     </style>
 </head>
 <body>
     <header>
-        <h1>TITULO DO SITE</h1>
         <nav>
             <a href="#">Home </a>
             <a href="#">Home </a>
@@ -73,14 +87,19 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="conteiner">
             <h1>Tela de Login</h1>
             <picture>
                 <source media="(min-width: )" srcset="">
             </picture>
         </section>
-        <section>
-            <h1>Segunda aba</h1>
+        <section class="conteiner">
+            <div class="item" style="align-self: flex-end">A</div>
+            <div class="item" style="flex-basis: 150px;">BBBBBBBB</div>
+            <div class="item" style="order: -2">C</div>
+            <div class="item">Direção e eixo</div>
+            <div class="item" style="flex-basis: 150px;">E</div>
+            <div class="item">F</div>
         </section>
     </main>    
 </body>
