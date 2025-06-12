@@ -18,14 +18,48 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+
+
+    /*configurações flexbox do header*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.581);
+    
 }
 
 header > nav {
-    border: 1px dotted black;
+    /*border: 1px dotted black;
+    
+    configurações do flexbox do nav.
+    Use pontilhado pra entender o comportamento da caixa.*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
 }
 
 main {
