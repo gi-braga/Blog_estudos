@@ -7,13 +7,13 @@
     <style>
         div.container {
             border: 3px solid blue;
-            height: 250px;
+            height: auto;
 
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: 80px 80px 80px / auto auto auto;
             gap: 5px;
-            
+            place-content: normal normal;
+            place-items: normal normal;
         }
 
         div.item {
@@ -34,6 +34,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
     
 </body>
