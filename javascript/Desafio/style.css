@@ -6,7 +6,7 @@ body {
 }
 header {
     text-align: center;
-    color: brown;
+    color: white;
  }
 section {
     background: white;
@@ -17,9 +17,14 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
 }
 
+div {
+    text-align: center;
+    padding: 8px;
+}
+
 footer {
     text-align: center;
     font-size: 12pt;
-    color: brown;
+    color: white;
     font-style: italic;
 }
