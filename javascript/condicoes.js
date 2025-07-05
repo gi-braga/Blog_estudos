@@ -67,5 +67,33 @@ switch(diaSem) {
         break
 }
 
+// Estruturas de repetição 
+
+//Teste logico no inicio (while)
+var c = 1
+while (c <= 6) {
+    console.log(`Passo ${c}`)
+    c++ // incrementa c em 1
+}
+
+//Teste logico no final (do...while)
+var c = 1
+do {
+    console.log(`Passo ${c}`)
+    c++ // incrementa c em 1
+} while (c <= 6)
+
+
+// Estruturas de repetição com for
+
+for (var c=1; c<=6; c++) {
+    console.log(`Passo ${c}`)
+}
+
 */
 
+console.log('Vai começar...')
+for (var c=1; c<=6; c++) {
+    console.log(c)
+}
+console.log('FIM!')
