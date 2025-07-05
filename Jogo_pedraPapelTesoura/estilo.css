@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+body {
+    background-image: url('imagemfundo.png');
+    font: normal 12pt Arial;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(173, 216, 230, 0.648);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.content {
+    text-align: center;
+    font-weight: bold;
+}
+
+.res {
+    padding: 20px;
+}
+
+button {
+    background-color: cadetblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkslategray;
+}
+
+
+footer {
+    background-color: white;
+    text-align: center;
+    font: normal 11pt Arial;
+    font-style: italic;
+    padding: 10px;
+}
