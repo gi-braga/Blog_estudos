@@ -11,18 +11,26 @@
     <div class="container">
         <div class="content">
             <p>PEDRA, PAPEL ou TESOURA?</p>
-            <div class="res">
-                <input type="radio" name="escolha" value="pedra" id="pedra">
-                <label for="pedra">Pedra</label>
-                <input type="radio" name="escolha" value="papel" id="papel">
-                <label for="papel">Papel</label>
-                <input type="radio" name="escolha" value="tesoura" id="tesoura">
-                <label for="tesoura">Tesoura</label>
+            
+            <input type="radio" name="escolha" value="pedra" id="pedra">
+            <label for="pedra">Pedra</label>
+            
+            <input type="radio" name="escolha" value="papel" id="papel">
+            <label for="papel">Papel</label>
+            
+            <input type="radio" name="escolha" value="tesoura" id="tesoura">
+            <label for="tesoura">Tesoura</label>
+            
+            <div class="botao">
+                <input type="button" value="jogar" class="button" onclick="jogar()">
             </div>
-            <button onclick='jogar()'>Bora jogar!</button>
+            
+            <div id="res">
+                Resultado...
+            </div>
         </div>
     </div>
-    <footer>Braga Studio - 2025</footer>
+    <footer>&copy; Braga Studio - 2025</footer>
     
     <script src="script3.js"></script>
 </body>
