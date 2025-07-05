@@ -1,19 +1,19 @@
 function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear()
-    var fano = window.document.getElementById("txtano")
-    var res = window.document.querySelector('div#res')
+    var data = new Date() // data atual
+    var ano = data.getFullYear() // ano atual
+    var fano = window.document.getElementById("txtano") //pegar o ano digitado
+    var res = window.document.querySelector('div#res') // pegar a div res
 
     if (fano.value.length == 0 || fano.value > ano) {
         window.alert("[ERRO] Verifique os dados e tente novamente!")
     } else {
-        var fsex = document.getElementsByName("radsex")
-        var idade = ano - Number(fano.value)
-        var genero = ''
+        var fsex = document.getElementsByName("radsex") // pegar os radios sex
+        var idade = ano - Number(fano.value) //calcular a idade
+        var genero = '' //variavel para armazenar o genero
         var img = document.createElement('img') //criar elemento img
         img.setAttribute('id', 'foto') //setar o id do elemento img pelo js
-        if (fsex[0].checked) {
-            genero = 'homen'
+        if (fsex[0].checked) { // se o radio homem estiver selecionado
+            genero = 'homem'
             if (idade >= 0 && idade < 10) {
                 //criança
                 img.setAttribute('src', 'imagens/crianca-h.png')
@@ -27,7 +27,7 @@ function verificar() {
                 //idoso
                 img.setAttribute('src', 'imagens/idoso-h.png')
             }
-        } else if (fsex[1].checked) {
+        } else if (fsex[1].checked) { // se o radio mulher estiver selecionado
             genero = 'mulher'
             if (idade >= 0 && idade < 10) {
                 //criança
@@ -43,7 +43,7 @@ function verificar() {
                 img.setAttribute('src', 'imagens/idoso-m.png')
             }
         }
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos.` //mostrar o genero e a idade
         res.appendChild(img) //adicionar o elemento img dentro do div res
     }
 
