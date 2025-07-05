@@ -35,7 +35,7 @@ if (hora < 12) {
     console.log('Boa noite!')
 }
 
-*/
+
 
 var agora = new Date()
 var diaSem = agora.getDay()
@@ -66,3 +66,6 @@ switch(diaSem) {
         console.log('[ERRO] Dia inválido')
         break
 }
+
+*/
+
