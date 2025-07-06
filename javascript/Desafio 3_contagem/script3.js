@@ -8,6 +8,10 @@ function contar() {
     fim = Number(fim)
     passo = Number(passo)
     res.innerHTML = 'Contando: <br>'
+    
+    if (passo <= 0) {
+        passo = 1
+    }
 
     if (inicio == 0 && fim == 0 && passo == 0) {
         res.innerHTML = 'Impossível contar!'
