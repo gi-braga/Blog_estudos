@@ -98,4 +98,46 @@ for (var c=1; c<=6; c++) {
 }
 console.log('FIM!')
 
+
+let num = [5, 8, 2, 9, 3]
+
+console.log(`Nosso vetor é o ${num}`)
+console.log(num) //acrescenta colchetes e espaços na visualização
+
+num[5] = 7 //adiciona o numero 7 na posição 5
+console.log(num)
+
+num.push(4) //adiciona o numero 4 na ultima posição
+console.log(num)
+
+num.length //mostra o tamanho do vetor
+num.sort() //ordena os valores do vetor
+console.log(num)
+
+let num = [8, 1, 7, 4, 2, 9]
+
+for (let pos=0; pos < num.length; pos++) {
+    console.log (`A posição ${pos} tem o valor ${num[pos]}`)
+}
+
+
+let num = [8, 1, 7, 4, 2, 9]
+num.sort()
+for (let pos in num) {
+    console.log(`A posição ${pos} tem o valor ${num[pos]}`)
+}
+
+let num = [8, 1, 7, 4, 2, 9]
+num.sort()
+console.log(num)
+console.log(`O vetor tem ${num.length} posições`)
+console.log(`O primeiro valor do vetor é ${num[0]}`)
+let pos = num.indexOf(7) //busca o valor 7 no vetor
+
+if (pos == -1) {
+    console.log(`O valor não foi encontrado!`)
+} else { 
+    console.log(`O valor 8 está na posição ${pos}`)
+}
+
 */
