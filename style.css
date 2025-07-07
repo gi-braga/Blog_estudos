@@ -62,12 +62,19 @@ article {
 
 footer {
     background-color: var(--cor4);
-    color: white
+    color: white;
+    text-align: center;
 
+}
+
+footer > img {
+    margin: 0px 550px 0px 0px;
 }
 
 footer > a {
     text-decoration: none;
     color: white;
+    font: normal 9pt Arial;
+    margin-right: 20px;
 }
 
