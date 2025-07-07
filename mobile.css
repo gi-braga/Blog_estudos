@@ -14,7 +14,14 @@ nav > a {
 }
 
 main {
+    height: 100vh;
+    display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div {
     padding-top: 10px;
     padding-bottom: 10px;
 }

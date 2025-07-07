@@ -62,8 +62,9 @@ header {
 main {
     background-color: var(--cor0);
     height: 100vh;
+    margin: auto;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     
