@@ -25,21 +25,31 @@ nav {
     color: white;
     text-align: right;
     padding-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 nav > a {
     text-decoration: none;
     color: white;
     margin-right: 20px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
+
+nav > a:hover {
+    color: var(--cor3);
+    transition: background-color 0.5s;
+}
+
 
 nav > span {
-    
-}
-
-nav > span > img {
-    padding-top: 10px;
-    padding-right: 70%;
+    padding-top: 15px;
+    flex: 0 0 200px;
+    margin-right: 1000px;
 }
 
 header {
