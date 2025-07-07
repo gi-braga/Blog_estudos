@@ -86,6 +86,7 @@ main > div:hover {
     background-color: #D98F89;
 }
 
+
 footer {
     background-color: var(--cor4);
     color: white;
@@ -105,4 +106,5 @@ footer > p {
     font: normal 9pt Arial;
     padding: 10px;
 }
+
 

@@ -30,6 +30,21 @@
     img#print {display: block;}
     img#desktop {display: none;}
     img#tv {display: none;}
+
+    div.retorno {
+    background-color: #D98F89;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+   
+    margin: auto;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
     
 }
 

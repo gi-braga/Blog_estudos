@@ -11,3 +11,18 @@ header > h1 {
 header > nav > a {
     width: 90vw;
 }
+
+div.retorno {
+    background-color: #D98F89;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+   
+    margin: auto;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
