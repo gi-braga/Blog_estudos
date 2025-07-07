@@ -200,10 +200,179 @@ function fatorial(n) {
 console.log(fatorial(5))
 
 
-*/
 
 let n = 8
 
 n **= 2
 
 console.log(n)
+
+//break e continue
+
+let n=0
+let max=100
+let pares=0
+
+for (let i=n; i<max; i++) {
+    if(i%2 != 0) {
+        continue
+    }
+    console.log('Testando loops - ' + i)
+    pares++
+}
+
+console.log('Quantidade de pares: ' + pares)
+console.log('Fim do programa')
+
+// PARAMETRO REST
+
+function soma(...valores) {
+    let tam = valores.length
+    let res = 0
+    for(let i=0; i < tam; i++) {
+        res += valores[i]
+    }
+    return res
+}
+
+console.log(soma(10, 5, 2, 8))
+
+
+
+//FUNÇÃO ANONIMA
+
+const f = function(v1,v2) {
+    return v1 + v2
+}
+
+console.log(f(10,5))
+
+
+//ARROW FUNCTION
+
+const soma = (n1, n2) => {return n1 + n2}
+console.log(soma(10,5))
+
+const nome = n => {return n} //Não precisa de parenteses se for somente um parametro
+console.log(nome("Gisele"))
+
+const add = n => n + 10 //não precisa do return
+console.log(add(10))
+
+
+//FUNÇÕES DENTRO DE FUNÇÕES
+
+const soma = (...valores) => {
+    const somar = val => {
+        let res=0
+        for(v of val)
+            res += v
+        return res
+    }
+    return somar(valores)
+}
+
+console.log(soma(10,5,8,2))
+
+
+// FUNÇÕES GERADORAS
+
+function* cores() {
+    yield 'Vermelho'
+    yield 'Verde'
+    yield 'Azul'
+}
+
+const itc = cores()
+console.log(itc) //retornou a função
+console.log(itc.next().value) //executa o primeiro valor da função
+console.log(itc.next().value) //executa o segundo valor da função
+console.log(itc.next().value) //executa o terceiro valor da função
+
+
+
+function* perguntas() {
+    const nome = yield 'Qual seu nome? '
+    const esporte = yield 'Qual seu esporte favorito? '
+    return 'Seu nome é ' + nome + ', seu esporte favorito é ' + esporte
+}
+
+const itp = perguntas()
+console.log(itp.next().value)
+console.log(itp.next('Gisele').value)
+console.log(itp.next('Volei').value)
+
+
+
+function* contador() {
+    let i = 0
+    while (true) { //loop infinito 
+        yield i++
+    }
+}
+
+const itc = contador()
+console.log(itc.next().value)
+console.log(itc.next().value)
+console.log(itc.next().value)
+
+
+function* contador() {
+    let i = 0
+    while (true) { //loop infinito
+        yield i++
+        if (i > 5)
+            break //controle que quebrará o loop infinito
+    }
+}
+
+const itc = contador()
+for (let c of itc) {
+    console.log(c)
+}
+
+// METODO MAP
+
+const cursos = ['HTML', 'CSS', 'Javascript', 'PHP', 'React']
+
+cursos.map((el, i) => { //Primeiro parametro é o elemento da coleção a cada iteração e o segundo parametro é o indice
+    console.log("Curso: " + el + " - Posição do curso: " + i)
+
+}) 
+
+
+const cursos = ['HTML', 'CSS', 'Javascript', 'PHP', 'React']
+
+let c = cursos.map((el, i) => { 
+    return el //Quando quiser retornar o elemento de forma simples
+}) 
+
+console.log(c)
+
+//UTILIZANDO OPERADOR THIS EM FUNÇÕES
+
+function aluno(nome,nota) {
+    this.nome=nome
+    this.nota=nota
+
+    this.dados_anonimo = function() { //RESULTADO UNDEFINED PORQUE NO SetTimeOut O THIS É GERADO NUMA NOVA INSTANCIA
+        setTimeout(function(){
+            console.log(this.nome)
+            console.log(this.nota)
+        },2000) //setTimeout é o 'aguarde' do Portugol
+    }
+    this.dados_arrow = function() {
+        setTimeout(() => { //ARROW FUNCTION CONTORNA O THIS GERADO EM NOVA INSTANCIA
+            console.log(this.nome)
+            console.log(this.nota)
+        },2000)
+    }
+}
+
+const al1 = new aluno('Gisele', 100)
+al1.dados_anonimo()
+al1.dados_arrow()
+
+
+*/
+

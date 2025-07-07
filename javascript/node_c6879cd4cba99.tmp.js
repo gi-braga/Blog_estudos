@@ -16,4 +16,18 @@ console.log(`${amigo.nome} pesa ${amigo.peso}Kg.`) //amigo.nome exibe somente o 
 amigo.engordar(2) //Adiciona parametro para função engordar
 console.log(`${amigo.nome} pesa ${amigo.peso}Kg.`)
 
+*/
 
+//break e continue
+
+let n=0
+let max=100
+
+while (n < max) {
+    console.log("Testando loops - " + n)
+    if (n>10 && n<20) {
+        continue
+    }
+    n++
+}
+console.log('Fim do programa')
