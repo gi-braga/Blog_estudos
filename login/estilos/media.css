@@ -25,6 +25,21 @@
         width: 70%;
     }
 
+    div.retorno {
+    background-color: #D98F89;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+   
+    margin: auto;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
+
 }
 
 /* CONFIGURAÇOES DESKTOP */
@@ -60,6 +75,21 @@
     div#form > p {
         font-size: 1.2em;
     }
+
+    div.retorno {
+    background-color: #D98F89;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+   
+    margin: auto;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
 
 }
 

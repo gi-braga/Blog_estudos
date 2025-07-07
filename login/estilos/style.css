@@ -147,3 +147,18 @@ form > a.botao > i {
     font-size: 0.9em;
     
 }
+
+div.retorno {
+    background-color: #D98F89;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+   
+    margin: auto;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
