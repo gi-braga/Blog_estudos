@@ -24,51 +24,68 @@ nav {
     background-color: var(--cor2);
     color: white;
     text-align: right;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 nav > a {
     text-decoration: none;
     color: white;
-    margin: 10px;
+    margin-right: 20px;
 }
 
-nav > img {
-    margin: 0px 350px 0px 0px;
+nav > span {
+    
+}
+
+nav > span > img {
+    padding-top: 10px;
+    padding-right: 70%;
 }
 
 header {
-    padding: 40px;
+    padding: 20px;
     background-color: var(--cor3);
-}
-
-header > a {
-    text-decoration: none;
     color: white;
-    font: normal 10pt Arial;
-    margin-right: 20px;
+    text-align: center;
 }
 
 main {
     background-color: var(--cor0);
-    margin: 0 40px 0 40px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-article {
-    text-indent: 20px;
-    padding: 20px;
+main > div {
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #D5AC8D;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+}
 
+main > div > a {
+    text-decoration: none;
+    color: var(--cor4);
+    font: normal 10pt Arial;
+    font-weight: bold;
+}
+
+main > div:hover {
+    background-color: #D98F89;
 }
 
 footer {
     background-color: var(--cor4);
     color: white;
     text-align: center;
+    padding: 10px;
 
-}
-
-footer > img {
-    margin: 0px 550px 0px 0px;
 }
 
 footer > a {
@@ -76,5 +93,10 @@ footer > a {
     color: white;
     font: normal 9pt Arial;
     margin-right: 20px;
+}
+
+footer > p {
+    font: normal 9pt Arial;
+    padding: 10px;
 }
 
