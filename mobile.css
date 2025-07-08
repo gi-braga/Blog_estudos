@@ -1,19 +1,15 @@
 @charset "UTF-8";
 
-nav {
+div.item1 {
     flex-flow: column nowrap;
 }
 
-nav > span {
+div.item1 > img {
     flex-basis: 50px;
     margin: auto;
 }
 
-nav > a {
-    width: 90vw;
-}
-
-main {
+div.item3 {
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
@@ -21,7 +17,7 @@ main {
     align-items: center;
 }
 
-main > div {
+div.item3 > div {
     padding-top: 10px;
     padding-bottom: 10px;
 }
