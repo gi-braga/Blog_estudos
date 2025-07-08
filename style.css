@@ -203,6 +203,10 @@ div.item5 > a {
     margin-right: 20px;
 }
 
+div.item5 > a:hover {
+    color: var(--cor2);
+}
+
 div.item5 > p {
     font: normal 9pt Arial;
 }
