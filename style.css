@@ -209,6 +209,7 @@ div.item5 > a:hover {
 
 div.item5 > p {
     font: normal 9pt Arial;
+    margin-bottom: 5px;
 }
 
 
