@@ -20,6 +20,7 @@ body {
 
 }
 
+/*
 nav {
     background-color: var(--cor2);
     color: white;
@@ -51,6 +52,7 @@ nav > span {
     flex: 0 0 200px;
     margin-right: 1000px;
 }
+
 
 header {
     padding: 20px;
@@ -116,6 +118,93 @@ footer > a {
 footer > p {
     font: normal 9pt Arial;
     padding: 10px;
+}
+*/
+
+div.container {
+    height: auto;
+    display: grid;
+    grid-template: 60px 50px auto 50px / 3fr 1fr;
+    place-content: space-around center;
+    place-items: stretch stretch;
+}
+
+div.item1 {
+    grid-area: 1 / 1 / 1 / 3;
+    background-color: var(--cor2);
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+div.item2 {
+    grid-area: 2 / 1 / 3 / 3;
+    padding: 20px;
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+}
+
+div.item2 > p {
+    font-size: 1em;
+}
+
+div.item3 {
+    display: grid;
+    grid-area: 3 / 1 / 4 / 4;
+    grid-template-columns: auto;
+    background-color: var(--cor0);
+    text-align: center;
+    place-content: space-between stretch;
+    place-items: start center;
+    padding: 20px;
+}
+
+div.item3 > h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;    
+}
+
+div.item3 > div {
+    padding: 30px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: #D5AC8D;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+}
+
+div.item3 > div > a {
+    text-decoration: none;
+    color: var(--cor4);
+    font: normal 10pt Arial;
+    font-weight: bold;
+}
+
+div.item3 > div:hover {
+    background-color: #D98F89;
+}
+
+div.item5 {
+    grid-area: 4 / 1 / 5 / 3;
+    background-color: var(--cor4);
+    color: white;
+    place-items: center center;
+    place-content: center center;
+    padding: 10px;
+}
+
+div.item5 > a {
+    text-decoration: none;
+    color: white;
+    font: normal 9pt Arial;
+    margin-right: 20px;
+}
+
+div.item5 > p {
+    font: normal 9pt Arial;
 }
 
 
