@@ -1,4 +1,4 @@
-const caixaCursos=document.getElementById("caixaCursos")
+const caixaCursos=document.querySelector("#caixaCursos")
 const botao_c=[...document.querySelectorAll(".curso")]
 const c1_2=document.querySelector("#c1_2")
 const cursos=["HTML", "CSS", "Javascript", "PHP", "React", "MySQL", "ReactNative"]
