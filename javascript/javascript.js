@@ -373,6 +373,29 @@ const al1 = new aluno('Gisele', 100)
 al1.dados_anonimo()
 al1.dados_arrow()
 
+// METODO FILTER
+
+const idade=[15, 21, 30, 17, 18, 44, 12, 50]
+
+//const filtroMaior18=(valor,incice,arr)=>{
+//const filtroMaior18=(valor)=>{
+//    if(valor >= 18)
+//        return valor
+//}
+
+const maior=idade.filter((val,ind,arr)=>{
+    if(val >= 18)
+        return val
+})
+
+const menor=idade.filter((val,ind,arr)=>{
+    if(val <= 18)
+        return val
+})
+
+
+console.log(idade)
+console.log(maior)
+console.log(menor)
 
 */
-
