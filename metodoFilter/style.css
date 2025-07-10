@@ -27,6 +27,10 @@ button {
     cursor: pointer;
 }
 
+#caixaNovoCurso > button {
+    margin-top: 10px;
+}
+
 button:hover {
     background-color: rgb(1, 1, 55);
 }

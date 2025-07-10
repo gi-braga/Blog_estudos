@@ -4,12 +4,18 @@ const c1_2=document.querySelector("#c1_2")
 const cursos=["HTML", "CSS", "Javascript", "PHP", "React", "MySQL", "ReactNative"]
 const botaoCursoSelecionado=document.getElementById("btnCursoSelecionado")
 const botaoRemoverCurso=document.getElementById("btnRemoverCurso")
+const botaoAdicionarNovoCursoAntes=document.getElementById("btnAdicionarNovoCursoA")
+const botaoAdicionarNovoCursoDepois=document.getElementById("btnAdicionarNovoCursoD")
+const nomeCurso=document.getElementById("nomeCurso")
 
-cursos.map((el,chave)=>{
-    const novoElemento=document.createElement("div") //CRIANDO ELEMENTOS NO HTML
-    novoElemento.setAttribute("id", "c" + chave)
+let indice=0 //POSIÇÃO DO ELEMENTO
+
+//CRIANDO ELEMENTOS NO HTML
+const criarNovoCurso = (curso) => {
+    const novoElemento=document.createElement("div") 
+    novoElemento.setAttribute("id", "c" + indice)
     novoElemento.setAttribute("class", "curso c1")
-    novoElemento.innerHTML=el
+    novoElemento.innerHTML=curso
 
     const comandos=document.createElement("div")
     comandos.setAttribute("class", "comandos")
@@ -21,8 +27,13 @@ cursos.map((el,chave)=>{
     comandos.appendChild(rb) //INSERIR BOTAO RADIO
 
     novoElemento.appendChild(comandos) //INSERIR COMANDO
+    return novoElemento
+}
 
+cursos.map((el,chave)=>{
+    const novoElemento=criarNovoCurso(el) //CRIAR NOVO ELEMENTO CHAMANDO A FUNÇÃO CriarNovoCurso
     caixaCursos.appendChild(novoElemento) //INSERIR ELEMENTOS NOVOS NO HTML
+    indice++
 })
 
 
@@ -77,3 +88,24 @@ botaoRemoverCurso.addEventListener("click",(evt)=>{
 
 //INSERINDO NOVOS ELEMENTOS EM POSIÇÕES ESPECIFICAS
 
+botaoAdicionarNovoCursoAntes.addEventListener("click",(evt)=>{
+    const rs=radioSelecionado()
+    try {
+        const cursoSelecionado=rs.parentNode.parentNode
+        const novoCurso=criarNovoCurso(nomeCurso.value)
+        caixaCursos.insertBefore(novoCurso, cursoSelecionado) //METODO PARA ADICIONAR ANTES
+    }catch(ex){
+        alert("Selecione um curso!")
+    }
+})
+
+botaoAdicionarNovoCursoDepois.addEventListener("click",(evt)=>{
+    const rs=radioSelecionado()
+    try {
+        const cursoSelecionado=rs.parentNode.parentNode
+        const novoCurso=criarNovoCurso(nomeCurso.value)
+        caixaCursos.insertBefore(novoCurso, cursoSelecionado.nextSibling) 
+    }catch(ex){
+        alert("Selecione um curso!")
+    }
+})
