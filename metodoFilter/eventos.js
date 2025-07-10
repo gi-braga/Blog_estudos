@@ -91,9 +91,13 @@ botaoRemoverCurso.addEventListener("click",(evt)=>{
 botaoAdicionarNovoCursoAntes.addEventListener("click",(evt)=>{
     const rs=radioSelecionado()
     try {
-        const cursoSelecionado=rs.parentNode.parentNode
+        if(nomeCurso.value!="") {
+            const cursoSelecionado=rs.parentNode.parentNode
         const novoCurso=criarNovoCurso(nomeCurso.value)
         caixaCursos.insertBefore(novoCurso, cursoSelecionado) //METODO PARA ADICIONAR ANTES
+        } else {
+            alert("Digite o nome do curso")
+        }
     }catch(ex){
         alert("Selecione um curso!")
     }
@@ -102,9 +106,13 @@ botaoAdicionarNovoCursoAntes.addEventListener("click",(evt)=>{
 botaoAdicionarNovoCursoDepois.addEventListener("click",(evt)=>{
     const rs=radioSelecionado()
     try {
-        const cursoSelecionado=rs.parentNode.parentNode
-        const novoCurso=criarNovoCurso(nomeCurso.value)
-        caixaCursos.insertBefore(novoCurso, cursoSelecionado.nextSibling) 
+        if(nomeCurso.value!="") {
+            const cursoSelecionado=rs.parentNode.parentNode
+            const novoCurso=criarNovoCurso(nomeCurso.value)
+            caixaCursos.insertBefore(novoCurso, cursoSelecionado.nextSibling)
+        } else {
+            alert("Digite o nome do curso")
+        }
     }catch(ex){
         alert("Selecione um curso!")
     }
