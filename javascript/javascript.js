@@ -398,4 +398,22 @@ console.log(idade)
 console.log(maior)
 console.log(menor)
 
+
+//ITERADORES - 
+//Coleção: Arrays, String, Map, Sets
+
+const valores=[10,8,9,2,]
+const iterador_val=valores[Symbol.iterator] ()
+
+console.log(valores)
+console.log(iterador_val.next().value)
+console.log(iterador_val.next().value)
+console.log(iterador_val.next().value)
+console.log(iterador_val.next().value)
+console.log(iterador_val.next().value)
+
+
 */
+
+
+
