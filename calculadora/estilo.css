@@ -87,3 +87,13 @@ input[type=button]:hover {
 #igual:hover {
     background-color: rgb(156, 69, 34);
 }
+
+footer {
+    background-color: rgb(24, 24, 75);
+    color: white;
+    font: normal 0.7em Helvetica;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
