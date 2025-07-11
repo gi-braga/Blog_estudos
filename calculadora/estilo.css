@@ -9,10 +9,18 @@ body {
     background-color: rgb(11, 11, 45);
 }
 
+header h1 {
+    color: white;
+    font: normal 2em Helvetica;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
 .container {
     background-color: rgb(36, 31, 100);
     margin: auto;
-    margin-top: 50px;
+    margin-top: 40px;
     max-width: 375px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
