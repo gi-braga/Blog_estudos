@@ -10,4 +10,4 @@ const botao_mult=document.querySelector("btn_mult")
 const botao_subt=document.querySelector("btn_subt")
 const telaResultado = document.querySelector("result")
 
-const val = document.querySelectorAll("input")
+const val = [...document.querySelectorAll("input")]
