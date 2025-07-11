@@ -55,7 +55,7 @@ input[type=button] {
     border: none;
     background-color: rgb(114, 120, 202);
     color: white;
-    font: bold 1em sans-serif;
+    font: bold 1.2em sans-serif;
     cursor: pointer;
     transition: 0.3s;
     position: relative;
@@ -63,4 +63,19 @@ input[type=button] {
 
 input[type=button]:hover {
     background-color: rgb(79, 84, 154);
+}
+
+#del {
+    font-size: 0.8em;
+    text-align: left;
+}
+
+#igual {
+    background-color: rgb(205, 89, 44);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#igual:hover {
+    background-color: rgb(156, 69, 34);
 }
