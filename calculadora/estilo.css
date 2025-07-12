@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(22, 22, 57);
+    background-color: rgb(22, 57, 41);
 }
 
 header h1 {
@@ -18,7 +18,7 @@ header h1 {
 }
 
 .container {
-    background-color: rgb(41, 36, 106);
+    background-color: rgb(27, 105, 88);
     margin: auto;
     margin-top: 40px;
     max-width: 375px;
@@ -27,7 +27,7 @@ header h1 {
 }
 
 .resultado input {
-    background-color: rgba(31, 29, 69, 0);
+    background-color: rgba(29, 69, 40, 0);
     border: none;
     position: relative;
     width: 300px;
@@ -36,10 +36,9 @@ header h1 {
 }
 
 .resultado input[type=text] {
-    background-color: rgba(31, 28, 84, 0.786);
+    background-color: rgba(28, 84, 62, 0.786);
     color: white;
     font: normal 3em Helvetica;
-    text
     text-align: right;
     width: 375px;
     border-radius: 10px 10px 0 0;
@@ -64,7 +63,7 @@ input[type=button] {
     border-radius: 20%;
     padding: 20px;
     border: none;
-    background-color: rgb(114, 120, 202);
+    background-color: rgb(114, 202, 187);
     color: white;
     font: bold 1.2em sans-serif;
     cursor: pointer;
@@ -82,7 +81,7 @@ input[type=button]:hover {
 }
 
 #igual {
-    background-color: rgb(205, 89, 44);
+    background-color: rgb(205, 141, 44);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -92,9 +91,9 @@ input[type=button]:hover {
 }
 
 footer {
-    background-color: rgb(31, 31, 87);
+    background-color: rgb(31, 87, 65);
     color: white;
-    font: normal 0.7em Helvetica;
+    font: normal 0.8em Helvetica;
     text-align: center;
     padding: 10px;
     margin-top: 100px;

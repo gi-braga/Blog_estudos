@@ -1,10 +1,4 @@
-/*const botao_soma=document.querySelector("#btn_soma")
-const botao_div=document.querySelector("#btn_divi")
-const botao_mult=document.querySelector("#btn_mult")
-const botao_subt=document.querySelector("#btn_subt")*/
-
 const telaResultado = document.querySelector("#result")
-const numero = document.querySelector(".num")
 
 let conta
 
