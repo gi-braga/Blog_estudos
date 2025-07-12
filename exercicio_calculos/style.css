@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+div {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+label {
+    font: normal 1.2em Arial;
+    margin-right: 10px;
+}
+
+input {
+    width: 300px;
+    background-color: lightgray;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: darkgray;
+}
