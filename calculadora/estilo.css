@@ -99,3 +99,19 @@ footer {
     margin-top: 100px;
     margin-bottom: 0px;
 }
+
+div.retorno {
+    background-color: #D98F89;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
