@@ -414,8 +414,3 @@ console.log(iterador_val.next().value)
 
 
 */
-
-
-let mapa = new Map()
-
-mapa.
