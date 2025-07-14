@@ -30,6 +30,7 @@ header h1 {
     background-color: rgba(29, 69, 40, 0);
     border: none;
     position: relative;
+    padding-right: 10px;
     width: 300px;
     min-height: 150px;
 
@@ -39,8 +40,8 @@ header h1 {
     background-color: rgba(28, 84, 62, 0.786);
     color: white;
     font: normal 3em Helvetica;
-    text-align: right;
-    width: 375px;
+    text-align: end;
+    width: 365px;
     border-radius: 10px 10px 0 0;
     min-height: 150px;
 }
