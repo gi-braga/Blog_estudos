@@ -199,6 +199,7 @@ div.item5 {
 div.item5 > a {
     text-decoration: none;
     color: white;
+    text-align: center;
     font: normal 9pt Arial;
     margin-right: 20px;
 }
