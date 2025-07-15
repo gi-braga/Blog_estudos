@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+header {
+    margin: auto;
+    margin-top: 50PX;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+section {
+    background-color: lightgray;
+    width: 400px;
+    margin: auto;
+    margin-top: 50PX;
+    padding: 50px;
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.campoForm input {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.campoForm button {
+    background-color: #888;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.res {
+    background-color: white;
+    border: 3px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.pessoa{
+    background-color: white;
+    border: 3px solid #444;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color:darkgray;
+    color: white;
+    font: normal 0.8em Helvetica;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+div.retorno {
+    background-color: #D98F89;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
