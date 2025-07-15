@@ -1,7 +1,6 @@
 # Blog_estudos
 
-Concentrando atividades e desafios relevantes no meu processo de estudo de HTML5, CSS3 e Javascript nesse blog:
-https://gi-braga.github.io/Blog_estudos
+Concentrando atividades e desafios relevantes no meu processo de estudo de HTML5, CSS3 e Javascript. [**Acesse o blog aqui!**](https://gi-braga.github.io/Blog_estudos)
 
 Cursos realizados:
 * [**Programação Básica** (6 módulos)](https://www.estudonauta.com/curso/programacao-basica-modulo-00-primeiros-passos/) - Plataforma Estudonauta
