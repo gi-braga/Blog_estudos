@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: auto;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.carros {
+    display: flex;
+    width: 100%;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.carro {
+    border: 3px solid blue;
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    width: 200px;
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.campoForm input {
+    background-color: rgb(225, 223, 223);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.campoForm button {
+    background-color: rgb(158, 158, 158);
+    cursor: pointer;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
