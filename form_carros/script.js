@@ -10,6 +10,12 @@ const btn_addCarro=document.querySelector("#btn_addCarro")
 
 let a_carros=[]
 
+const removerCarro=(quem)=>{ //FUNCAO PARA REMOVER CARROS PELO BOTAO
+    a_carros = a_carros.filter((el)=>{
+        return el.nome!=quem
+    })
+}
+
 f_tipoMilitar.addEventListener("click", (evt)=>{
     f_nome.value=""
     f_portas.value=""
@@ -32,18 +38,36 @@ const gerenciarExibicaoCarros=()=>{ //FUNCAO PARA MOSTRAR TODOS OS CARROS QUE ES
     a_carros.forEach((c) => {
         if(f_tipoMilitar.checked){
             const div = document.createElement("div") //CRIAR DIV
+            const btn = document.createElement("button") //BOTAO PARA REMOVER CARROS DENTRO DA DIV
+            btn.innerHTML="remover"
+            btn.addEventListener("click",(evt)=>{
+                const quemRemover=evt.target.parentNode.dataset.nome
+                removerCarro(quemRemover)
+                gerenciarExibicaoCarros()
+            })
             div.setAttribute("class", "carro") //ATRIBUIR CLASSE
+            div.setAttribute("data-nome", c.nome)
             div.innerHTML=`Nome: ${c.nome}<br>` //EXIBIR NOME
             div.innerHTML+=`Portas: ${c.portas}<br>`
             div.innerHTML+=`Cor: ${c.cor}<br>`
             div.innerHTML+=`Blindagem: ${c.blindagem}<br>`
             div.innerHTML+=`Munição: ${c.municao}<br>`
+            div.appendChild(btn)
             carros.appendChild(div)
         } else {
             const div = document.createElement("div") //CRIAR DIV
+            const btn = document.createElement("button")
+            btn.innerHTML="remover"
+            btn.addEventListener("click",(evt)=>{
+                const quemRemover=evt.target.parentNode.dataset.nome
+                removerCarro(quemRemover)
+                gerenciarExibicaoCarros()
+            })
             div.setAttribute("class", "carro") //ATRIBUIR CLASSE
+            div.setAttribute("data-nome", c.nome)
             div.innerHTML=`Nome: ${c.nome}<br>` //EXIBIR NOME
             div.innerHTML+=`Portas: ${c.portas}<br>`
+            div.appendChild(btn)
             carros.appendChild(div)
         }
     });   
