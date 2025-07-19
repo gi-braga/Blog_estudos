@@ -413,4 +413,31 @@ console.log(iterador_val.next().value)
 console.log(iterador_val.next().value)
 
 
+// MEMBROS STATIC 
+
+class Npc {
+    static alerta=false //Pode definir tanto em atributos como em metodos
+    constructor(energia){
+        this.energia=energia
+    }
+    info = function(){
+        console.log(`Energia: ${this.energia}`)
+        console.log(`Alerta: ${(Npc.alerta?"Sim":"Não")}`)
+        console.log("---------------")
+    }
+    static alertar = function(){ //Metodo nao faz parte da instancia da classe
+        Npc.alerta=true
+    }
+}
+
+const npc1= new Npc(100)
+const npc2= new Npc(200)
+const npc3= new Npc(300)
+
+Npc.alertar()
+
+npc1.info()
+npc2.info()
+npc3.info()
+
 */
