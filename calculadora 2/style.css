@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+div.calc {
+    width: 262px;
+    flex-wrap: wrap;
+    background-color: #6f6f6f;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+div.nome {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.teclas {
+    width: 252px;
+    flex-wrap: wrap;
+    background-color: #6f6f6f;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tecla {
+    background-color: #bbbaba;
+    border: 2px solid #6f6f6f;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.tecla:hover {
+    background-color: #9a9999;
+}
+
+.teclaOp {
+    border: 1px solid #6f6f6f;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.teclaOp:hover {
+    background-color: #bbbaba;
+}
+
+.teclaRes {
+    border: 1px solid #6f6f6f;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.teclaRes:hover {
+    background-color: #bbbaba;
+}
+
+/* DISPLAY */
+
+div.display {
+    width: 243px;
+    background-color: white;
+
+}
+
+p.visor {
+    width: 220px;
+    text-align: right;
+    padding: 5px;
+    font-family: monospace;
+    font-size: larger;
+}
