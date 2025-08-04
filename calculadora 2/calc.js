@@ -5,6 +5,8 @@ const visor=document.querySelector(".visor")
 const teclaOn=document.getElementById("tligar")
 const teclaLimpar=document.getElementById("tlimpar")
 const teclaIgual=document.getElementById("tigual")
+const aba=document.getElementById("calc_aba")
+const calc=document.getElementById("calc_principal")
 
 let sinal=false //variavel para verificar se o ultimo caracter é um operador
 let decimal=false //variavel para controlar a virgula
@@ -61,3 +63,11 @@ teclaIgual.addEventListener("click",(evt)=>{
     visor.innerHTML=res //exibe o resultado
 })
 
+aba.addEventListener("click",(evt)=>{
+    calc.classList.toggle("calc_principal_exibir") //toogle: se tiver a classe, remove, se não tiver, adiciona
+    if(calc.classList.contains("calc_principal_exibir")){
+        evt.target.setAttribute("src","seta_esquerda.svg")
+    } else {
+        evt.target.setAttribute("src","seta_direita.svg")
+    }
+})
