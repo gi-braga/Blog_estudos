@@ -74,3 +74,18 @@ button {
     background-color: darkred !important;
     color: white !important;
 }
+
+div.retorno {
+    background-color: #D98F89;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
