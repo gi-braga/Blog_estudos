@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: lightsalmon;
+}
+
 .timer {
     display: flex; 
     justify-content: center;
@@ -58,11 +62,12 @@ input[type='number'] {
 }
 
 button {
-    background-color: #aaa;
+    background-color: gray;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 
 .alarme {
