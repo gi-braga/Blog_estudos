@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    border: none;
+    padding: 0px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.timer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 3px solid #888;
+}
+
+.div_data {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.div_relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: gray;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+input[type='number'] {
+    border: 1px solid black;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.comandos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #aaa;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alarme {
+    background-color: red !important;
+}
