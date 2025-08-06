@@ -66,5 +66,6 @@ button {
 }
 
 .alarme {
-    background-color: red !important;
+    background-color: darkred !important;
+    color: white !important;
 }

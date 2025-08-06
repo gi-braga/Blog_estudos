@@ -1,14 +1,16 @@
 const div_data=document.getElementById("div_data")
 const div_relogio=document.getElementById("div_relogio")
 
+//alarme 
+
 const btn_ativar=document.getElementById("btn_ativar")
 const btn_parar=document.getElementById("btn_parar")
 const tmp_alarme=document.getElementById("tmp_alarme")
 const hora_alarme=document.getElementById("hora_alarme")
 const timer=document.getElementById("timer")
 
-let som_alarme= new Audio("") //colocar o caminho do som do alarme aqui
-som_alarme.loop=true //repetir o som do alarme
+let som_alarme= new Audio("Scott Joplin The Entertainer.mp3") //colocar o caminho do som do alarme aqui
+som_alarme.loop=-1 //repetir o som do alarme
 som_alarme.volume=0.5 //volume do som do alarme
 
 let ts_atual=null //timestamp atual
@@ -20,9 +22,23 @@ btn_ativar.addEventListener("click",()=>{
     ts_atual=Date.now() //timestamp atual
     ts_alarme= ts_atual+(tmp_alarme.value*1000) //timestamp atual + timestamp do alarme em milisegundos
     alarme_ativo=true
+    timer.classList.add("alarme") //adiciona a classe alarme ao timer
     const dt_alarme=new Date(ts_alarme) //data do alarme
     hora_alarme.innerHTML="Hora do Alarme:"+dt_alarme.getHours()+":"+dt_alarme.getMinutes()+":"+dt_alarme.getSeconds()
-}
+})
+
+btn_parar.addEventListener("click",()=>{
+    alarme_ativo=false
+    alarme_tocando=false
+    hora_alarme.innerHTML="Hora do Alarme:"
+    tmp_alarme.value=0
+    timer.classList.remove("alarme")
+    som_alarme.pause() //pausa o som do alarme
+    som_alarme.currentTime=0 //volta o som do alarme para o início
+})
+
+
+//data e hora atual
 
 const data=new Date()
 
@@ -48,6 +64,14 @@ const relogio=()=>{
     segundo=segundo<10?"0"+segundo:segundo
     const hora_completa=hora+":"+minuto+":"+segundo
     div_relogio.innerHTML=hora_completa
+   
+    if(alarme_ativo && !alarme_tocando){ //verifica se o alarme está ativo e não está tocando
+        if(data.getTime() >= ts_alarme){ //verifica se o horário atual é maior ou igual ao horário do alarme
+            alarme_tocando=true
+            som_alarme.play() //toca o som do alarme
+            timer.classList.add("alarme") //adiciona a classe alarme ao timer
+        }
+    }
 }
 
 const intervalo=setInterval(relogio,1000) //atualiza o relogio a cada 1 segundo
