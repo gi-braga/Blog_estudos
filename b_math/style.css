@@ -32,3 +32,18 @@ h1 {
     transform-origin: center center;
     margin-top: 50px;
 }
+
+div.retorno {
+    background-color: #D98F89;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    padding: 10px;
+}
+
+div.retorno > a {
+    color: white;
+    text-decoration: none;
+}
