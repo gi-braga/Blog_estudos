@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.mat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
