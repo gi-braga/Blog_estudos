@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.formulario {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#filme {
+    margin: 10px;
+}
+
+#duracao {
+    margin: 10px;
+}
+
+#botao {
+    align-self: left;
+    padding: 5px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#veiculo {
+    margin: 10px;
+}
+
+#preco {
+    margin: 10px;
+}
+
+#botao2 {
+    align-self: left;
+    padding: 5px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
