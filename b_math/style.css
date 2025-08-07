@@ -18,3 +18,17 @@
 h1 {
     text-align: center;
 }
+
+.olhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.olho {
+    width: 200px;
+    height: 200px;
+    transform-origin: center center;
+    margin-top: 50px;
+}
