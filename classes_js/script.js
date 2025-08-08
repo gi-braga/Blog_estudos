@@ -111,8 +111,8 @@ btn_add.addEventListener("click",(evt)=>{
 })
 
 btn_del.addEventListener("click",(evt)=>{
-    bolas.map((b)=>{
+    bolas.map((el)=>{
         //remover a bolinha (uma de cada vez)
-        b.remover()
+        el.remover()
     })
 })
