@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prática de Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="n_objetos" class="caixa">
+            <label>Número de objetos</label>
+            <p id="n_objetos">0</p>
+        </div>
+        <div id="qtd_objetos" class="caixa">
+            <label>Quantidade de objetos</label>
+            <input type="number" id="txt_qtde" value="0" min="0">
+            <button id="adicionar">Adicionar</button>
+        </div>
+        <div id="remover" class="caixa">
+            <button id="remover">Remover todos</button>
+        </div>
+    </div>
+    <div id="objetos" class="container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

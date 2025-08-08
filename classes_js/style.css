@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 235, 235);
+    margin: 5px;
+}
+
+.caixa {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+    align-self: stretch;
+}
+
+p {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+input[type="number"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+#objetos {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+    position: absolute;
+    overflow: hidden;
+}
+
+.bola {
+    position: absolute;
+    border-radius: 100px;
+}
