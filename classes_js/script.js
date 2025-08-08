@@ -1,8 +1,8 @@
 const palco = document.getElementById("palco")
 const num_objetos = document.getElementById("n_objetos")
 const txt_qtde = document.getElementById("txt_qtde")
-const btn_add = document.getElementById("adicionar")
-const btn_del = document.getElementById("remover")
+const btn_add = document.getElementById("btn_adicionar")
+const btn_del = document.getElementById("btn_remover")
 
 //precisamos saber o tamanho da área disponivel em que será trabalhado
 
@@ -32,7 +32,7 @@ class Bola{ //a criação desse objeto não exibirá a bolinha, voce precisará 
         this.desenhar() //chamada de função para desenhar a bolinha no DOM
 
         this.controle = setInterval(this.controlar,10) //variavel para definir o controle
-        
+
         this.eu = document.getElementById(this.id) //variavel que vai relacionar a bolinha que foi instanciada no DOM com esse objeto instanciado no arrayBolas
         numBola++ //adicionar a cada construção do objeto uma bolinha no array 
         num_objetos.innerHTML = numBola //preencher o numero de objetos (num_objeto) no paragrafo com o valor da variavel Bola (numBola)
