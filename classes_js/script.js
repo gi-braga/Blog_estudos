@@ -15,7 +15,7 @@ let numBola = 0
 
 class Bola{ //a criação desse objeto não exibirá a bolinha, voce precisará instanciar a classe bola, ao instanciar voce criará a bolinha no DOM e relacionar aquela bolinha do DOM com esse objeto instanciado.
     constructor(arrayBolas,palco){
-        this.tam = Math.floor(Math.random()*10)+10 //tamanho minimo será 10 e o máximo será 19
+        this.tam = Math.floor(Math.random()*15)+10 //tamanho minimo será 10 e o máximo será 19
         this.r =  Math.floor(Math.random()*255) //sortear em R
         this.g =  Math.floor(Math.random()*255) //sortear em G
         this.b =  Math.floor(Math.random()*255) //sortar em B
@@ -30,7 +30,9 @@ class Bola{ //a criação desse objeto não exibirá a bolinha, voce precisará 
         //é preciso garantir que toda bolinha criada tenha um ID diferente. Esse ID será o Timestamp (contagem no momento da criação) + um numero sorteado
         this.id = Date.now()+ "_" + Math.floor(Math.random()*100000000000000) //sortar um numero entre 0 e 100 trilhoes, e a chance desse numero ser igual é muito remota!
         this.desenhar() //chamada de função para desenhar a bolinha no DOM
-        this.controle = setInterval(this.controlar(),10); //variavel para definir o controle
+
+        this.controle = setInterval(this.controlar,10) //variavel para definir o controle
+        
         this.eu = document.getElementById(this.id) //variavel que vai relacionar a bolinha que foi instanciada no DOM com esse objeto instanciado no arrayBolas
         numBola++ //adicionar a cada construção do objeto uma bolinha no array 
         num_objetos.innerHTML = numBola //preencher o numero de objetos (num_objeto) no paragrafo com o valor da variavel Bola (numBola)
