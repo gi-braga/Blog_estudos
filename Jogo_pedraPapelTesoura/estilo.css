@@ -7,6 +7,10 @@ body {
     background-size: cover;
     font: normal 12pt Arial;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:  rgb(82, 15, 15);
 }
 
@@ -72,8 +76,8 @@ div.retorno {
     width: 200px;
     border-radius: 10px;
     text-align: center;
-   
     margin: auto;
+    margin-top: 20px;
     padding: 10px;
 }
 
