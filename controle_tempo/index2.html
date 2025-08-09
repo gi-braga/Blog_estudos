@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang=“pt-br”>
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <style>
+        #jogador {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+        }
+    </style>
+    <script>
+        //Os primeiros comandos inseridos foram as variáveis para controlar a posição X e Y e as variáveis para controlar a direção X e Y
+
+        var dx = 0;
+        var dy = 0;
+        var px = 0;
+        var py = 0;
+
+        //Em sequência as variáveis associadas ao “quadrado preto”<div id= “jogador”> e para o intervalo “setInterval”
+
+        var jg = document.getElementById("jogador");
+        var intervalo = setInterval(enterFrame, 20);
+
+        //Note que nosso setInterval chama a função com nome “enterFrame” de 20 em 20 milésimos de segundo, 0,02 segundos, muito rápido
+
+       //A função “enterFrame” simplesmente calcula as novas posições X e Y e passa para as propriedades left e top do quadrado “jogador”
+
+        function enterFrame() {
+            px += dx * 10;
+            py += dy * 10;
+            jg = document.getElementById("jogador");
+            jg.style.left = px + "px";
+            jg.style.top = py + "px";
+        }
+
+        //A seguir adicionamos os eventos “keydown” para interceptar as teclas pressionadas e “keyup” para interceptar quais as tecla que já foram liberadas
+
+        function load() {
+            document.addEventListener("keydown", teclaDw);
+            document.addEventListener("keyup", teclaUp);
+        }
+
+        //As funções teclaDw() e teclaUp(), simplesmente definem a direção para 1, -1 ou 0 das variáveis dx e dy de acordo com a tecla pressionada ou liberada.
+
+        function teclaDw() {
+            var tecla = event.keyCode;
+            if (tecla == 37) {
+                //Esquerda
+                dx = -1;
+            } else if (tecla == 39) {
+                //Direita
+                dx = 1;
+            }
+            if (tecla == 38) {
+                //Cima
+                dy = -1;
+            } else if (tecla == 40) {
+                //baixo
+                dy = +1;
+            }
+        }
+        function teclaUp() {
+            var tecla = event.keyCode;
+            if (tecla == 37) {
+                //Esquerda
+                dx = 0;
+            } else if (tecla == 39) {
+                //Direita
+                dx = 0;
+            }
+            if (tecla == 38) {
+                //Cima
+                dy = 0;
+            } else if (tecla == 40) {
+                //baixo
+                dy = 0;
+            }
+        }
+
+        //Por último adicionamos o evento “load” para adicionar os eventos “keydown” e “keyup”.
+
+        window.addEventListener("load", load);
+        
+    </script>
+</head>
+
+<body>
+    <div id="jogador"></div>
+</body>
+
+</html>

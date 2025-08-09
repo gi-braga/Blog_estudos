@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang=“pt-br”>
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        /*
+        //No script abaixo configuramos um intervalo “setTimeout” que irá chamar a função “cfb” depois de cinco segundos, ou seja, quando abrir a página não aparecerá nada, após cinco segundos, a função será chamada e o texto “Canal Fessor Bruno” será mostrado.
+
+        var timer = setTimeout(cfb, 5000);
+        function cfb() {
+            document.write("Canal Fessor Bruno");
+        }
+        
+
+        //A diferença deste script usando “setInterval” para o anterior é que a função “cfb” será chamada sempre, de cinco em cinco segundos.
+
+        var timer = setInterval(cfb, 5000);
+        function cfb() {
+            document.write("Canal Fessor Bruno");
+        }
+
+        
+        //Vamos alterar o script anterior, para que o intervalo seja parado quando completar 10 iterações e vamos diminuir o tempo para 1 segundo.
+
+        var cont = 0;
+        var timer = setInterval(cfb, 1000);
+        function cfb() {
+            document.write("Canal Fessor Bruno<br>");
+            cont++;
+            if (cont == 10) {
+                clearInterval(timer);
+            }
+        }
+
+        //Vamos criar um script que muda a cor de fundo da página de um em um segundo, com cores definidas em um array.
+
+        var cores = ["#F00", "#0F0", "#00F", "#FF0", "#0FF", "#F0F", "#000", "#FFF"];
+        var i = 0;
+        var timer = setInterval(mudaCorFundo, 1000);
+        function mudaCorFundo() {
+            document.body.style.backgroundColor = cores[i];
+            i++;
+            if (i >= cores.length) {
+                i = 0;
+            }
+        }
+        */
+
+        //Podemos ainda controlar o intervalo por botões, vamos alterar nosso código adicionando dois botões para que inicie e pare o intervalo e de acordo com estes botões.
+
+        var cores = ["#F00", "#0F0", "#00F", "#FF0", "#0FF", "#F0F", "#000", "#FFF"];
+        var i = 0;
+        var timer;
+        function mudaCorFundo() {
+            document.body.style.backgroundColor = cores[i];
+            i++;
+            if (i >= cores.length) {
+                i = 0;
+            }
+        }
+        function iniciar() {
+            clearInterval(timer);
+            timer = setInterval(mudaCorFundo, 1000);
+        }
+        function parar() {
+            clearInterval(timer);
+            document.getElementById("bt_ini").value = "Continuar troca";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="Iniciar troca" id="bt_ini" onclick="iniciar()"><br><br>
+    <input type="button" value="Parar troca" onclick="parar()">
+    
+</body>
+
+</html>
