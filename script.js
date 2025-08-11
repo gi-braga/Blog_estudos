@@ -1,7 +1,7 @@
 const btn_imp = document.getElementById("btn_imprimir")
 
 btn_imp.addEventListener("click",(evt)=>{
-    const conteudo=document.getElementById('tabela').innerHTML //pegar o conteudo de TABELA do html
+    const conteudo=document.getElementById('tabela') //pegar o conteudo de TABELA do html
 
     let estilo = "<style>" //criar variavel estilo para definir como os elementos serão na impressão
     estilo += "table {margin: auto; width: 500%; height: 100px; border-collapse: collapse;}"
@@ -15,7 +15,7 @@ btn_imp.addEventListener("click",(evt)=>{
     win.document.writeln('<title>Tabela</title>')
     win.document.writeln(estilo)
     win.document.writeln('</head><body>')
-    win.document.writeln('teste impressao')
+    win.document.writeln(conteudo.innerHTML)
     win.document.writeln('</body></html>')
 
     win.print() //imprimir conteudo da janela
