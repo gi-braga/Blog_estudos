@@ -7,6 +7,10 @@
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         table {
@@ -52,6 +56,15 @@
             padding: 10px;
         }
 
+        #btn_imprimir{
+            width: 200px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
         div.retorno {
             background-color: #D98F89;
             width: 200px;
@@ -65,13 +78,10 @@
             color: white;
             text-decoration: none;
         }
-        
-
-
     </style>
 </head>
 <body>
-    <table>
+    <table id="tabela">
         <caption> Tabela de exercício do módulo</caption>
         <thead>
             <tr>
@@ -168,7 +178,11 @@
         </tfoot>
     </table>
 
+    <button id="btn_imprimir">Imprimir</button>
+
     <div class="retorno"><a href="index.html">VOLTAR A PÁGINA INICIAL</a></div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
